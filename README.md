@@ -5,14 +5,14 @@ Ce TP avait pour objectif de nous familiariser avec Redis, un système de gestio
 o	Nous avons installé Redis sur notre machine en utilisant Docker. Cela nous a permis de lancer rapidement un conteneur Redis sans avoir à configurer manuellement l'environnement.
 o	Commande utilisée :
 o	Copier
-o	```bash
+```bash
 docker run --name my-redis -d -p 6379:6379 redis
 ```
 2.	Vérification du service :
 o	Nous avons vérifié que le service Redis fonctionnait correctement en nous connectant au conteneur et en exécutant la commande ping.
 o	Commande utilisée :
 o	Copier
-o	```bash
+```bash
 docker exec -it my-redis redis-cli ping
 ```
 3.	Configuration pour les accès distants :
@@ -45,7 +45,7 @@ Nous avons créé une petite application web en Python utilisant Flask et Redis 
 o	Nous avons installé les dépendances nécessaires en utilisant pip.
 o	Commande utilisée :
 o	Copier
-```python
+```bash
 pip install flask redis
 ```
 2.	Code de l'application :
